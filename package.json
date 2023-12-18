@@ -1,7 +1,7 @@
 {
 	"name": "svelte-chart-apex",
 	"description": "ApexCharts wrapper for Svelte and SvelteKit. With the provided chart reference, all methods can be used.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
