@@ -1,5 +1,6 @@
 {
 	"name": "svelte-apex-charts",
+	"description": "ApexCharts wrapper for Svelte and SvelteKit. With the provided chart reference, all methods can be used.",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
@@ -24,6 +25,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
+		"apexcharts": "^3.45.0",
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
@@ -33,6 +35,7 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
+		"apexcharts": "^3.45.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -47,5 +50,15 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hyunbinseo/svelte-apex-charts.git"
+	},
+	"author": "Hyunbin Seo",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/hyunbinseo/svelte-apex-charts/issues"
+	},
+	"homepage": "https://github.com/hyunbinseo/svelte-apex-charts#readme"
 }
