@@ -1,5 +1,5 @@
 {
-	"name": "svelte-apex-charts",
+	"name": "svelte-chart-apex",
 	"description": "ApexCharts wrapper for Svelte and SvelteKit. With the provided chart reference, all methods can be used.",
 	"version": "0.0.1",
 	"scripts": {
@@ -53,12 +53,12 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/hyunbinseo/svelte-apex-charts.git"
+		"url": "git+https://github.com/hyunbinseo/svelte-chart-apex.git"
 	},
 	"author": "Hyunbin Seo",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/hyunbinseo/svelte-apex-charts/issues"
+		"url": "https://github.com/hyunbinseo/svelte-chart-apex/issues"
 	},
-	"homepage": "https://github.com/hyunbinseo/svelte-apex-charts#readme"
+	"homepage": "https://github.com/hyunbinseo/svelte-chart-apex#readme"
 }

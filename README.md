@@ -8,17 +8,17 @@ Create and update dynamic SVG charts in Svelte(Kit) using [ApexCharts] - [demo]
 ## Quick-Start
 
 ```shell
-pnpm add apexcharts svelte-apex-charts -D
-npm i apexcharts svelte-apex-charts -D
+pnpm add apexcharts svelte-chart-apex -D
+npm i apexcharts svelte-chart-apex -D
 # Bring your own ApexCharts library.
 # It is listed as a peer dependency.
 ```
 
 ```svelte
 <script>
-  import { renderChart } from 'svelte-apex-charts';
+  import { renderChart } from 'svelte-chart-apex';
 
-  /** @type {import('svelte-apex-charts').Chart} */
+  /** @type {import('svelte-chart-apex').Chart} */
   const chart = {
     options: {
       // Provide your own ApexChars options.
