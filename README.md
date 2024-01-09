@@ -34,20 +34,32 @@ npm i apexcharts svelte-chart-apex -D
 
 ```svelte
 <script>
+  // SvelteKit example with `browser` and `data` usage.
+  // For a Svelte-only example, reference the demo REPL.
+
+  import { browser } from '$app/environment';
   import { renderChart } from 'svelte-chart-apex';
+
+  export let data;
 
   /** @type {import('svelte-chart-apex').Chart} */
   const chart = {
     // Provide your own ApexCharts options.
     options: {
       chart: { type: 'bar' },
-      series: [{ name: 'sales', data: [5, 6, 13, 26] }],
-      xaxis: { categories: [2020, 2021, 2022, 2023] }
+      xaxis: { categories: [2020, 2021, 2022, 2023] },
+      series: data.series // Data from the initial page load.
     }
     // These key-values are later set by the action.
     // - node: HTMLDivElement; - No need to use bind:this on the <div> element.
     // - ref: ApexCharts; - Use the ApexCharts' methods. (e.g. updateOptions)
   };
+
+  $: if (browser && data) {
+    // Update the chart when the page data gets updated. (e.g. invalidateAll)
+    // The `updateSeries` does not run on mount, since the `ref` is undefined.
+    chart.ref?.updateSeries(data.series);
+  }
 </script>
 
 <!-- When this HTML element is unmounted, the chart is automatically destroyed. -->
