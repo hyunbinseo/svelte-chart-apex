@@ -32,18 +32,16 @@ npm i apexcharts svelte-chart-apex -D
 # It is listed as a peer dependency.
 ```
 
-```svelte
-<script>
-  // SvelteKit example with `browser` and `data` usage.
-  // For a Svelte-only example, reference the demo REPL.
+SvelteKit example. For a Svelte-only example, reference the [demo] REPL.
 
+```svelte
+<script lang="ts">
   import { browser } from '$app/environment';
-  import { renderChart } from 'svelte-chart-apex';
+  import { renderChart, type Chart } from 'svelte-chart-apex';
 
   export let data;
 
-  /** @type {import('svelte-chart-apex').Chart} */
-  const chart = {
+  const chart: Chart = {
     // Provide your own ApexCharts options.
     options: {
       chart: { type: 'bar' },
